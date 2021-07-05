@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <link href="//db.onlinewebfonts.com/c/cdc8c3de1e6bd5a9a67c6a001f9fedd0?family=Burbank+Big+Condensed" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Fortnite Stats</title>
+    </head>
+    <body>
+
+        <div>
+            <div id="title">
+                <div>FORTNITE PLAYER STATS</div>
+                <div id="namePlatContainer"></div>
+            </div>
+
+            <form id="statForm" method="POST">
+                <div class="input">
+                    <label for="username">Username:</label>
+                    <input autocomplete="off" placeholder="Epic Games Username" id="username" type="text" name="username" required>
+                </div>
+                <div class="input">
+                    <label for="platform">Platform:</label>
+                    <select id="platform" name="platform" required>
+                        <option value="" selected disabled hidden>
+                            Select a Platform
+                        </option>
+                        <option id='all' value='all'>All</option>
+                        <option id='keyboardMouse' value='keyboardMouse'>Mouse/Keyboard</option>
+                        <option id='gamepad' value='gamepad'>Console</option>
+                        <option id='touch' value='touch'>Mobile</option>
+                    </select>
+                </div>
+                <div id="submit">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+        
+        <div id="stats"></div>
+
+        <script src="js/stats.js"></script>
+    </body>
+</html>
